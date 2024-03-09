@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+</head>
+<body>
+    <section class="header-section">
+        <div class="container">
+            <div class="main_column">
+                <div class="logo_column">
+                    <a href="./index.html"><img src="./logo.png" alt="logo"></a>
+                </div>
+                <div class="menu_column">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-secction">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><a href="#"><img src="./banner3.png" alt=""></a></div>
+            <div class="item"><a href=""><img src="./banner2.png" alt=""></a></div>
+            <div class="item"><a href=""><img src="./banner1.png" alt=""></a></div>
+        </div> 
+    </section>
+
+    <section class="course-section">
+        <div class="container">
+            <h1>Our Service</h1>
+            <div class="main_column">
+                <div class="flex_column">
+                    <img src="./service1.png" alt="">
+                    <h2>Stage Revolution.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, laboriosam.consectetur adipisicing elit. Sint, laboriosam.</p>
+                    <p><strong>price</strong>30000</p>
+                </div>
+                <div class="flex_column">
+                    <img src="./service2.png" alt="">
+                    <h2>Turning Jane.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, laboriosam.consectetur adipisicing elit. Sint, laboriosam.</p>
+                    <p><strong>price</strong>2500</p>
+                </div>
+                <div class="flex_column">
+                    <img src="./service3.png" alt="">
+                    <h2>Zombie Hoax.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, laboriosam.consectetur adipisicing elit. Sint, laboriosam.</p>
+                    <p><strong>price</strong>33000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback-section">
+        <div class="container">
+            <h1>Feedback</h1>
+            <div class="feedback_column">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam, cupiditate nostrum, aliquam labore nam eaque eos aut iusto corrupti nihil omnis culpa, sint fugiat hic cumque nisi fuga minus animi doloribus! Similique quae quas ipsa tempora velit! Optio dicta impedit dolore quod incidunt vero et consequatur quo odit similique?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, recusandae.</p>
+                <img src="./feedback.png" alt="">
+                <strong>David</strong>
+                <span>Business Man</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h1>Gallery</h1>
+            <div class="main_column">
+                <img src="./gallery1.png" alt="">
+                <img src="./gallery2.png" alt="">
+                <img src="./gallery3.png" alt="">
+                <img src="./gallery4.png" alt="">
+
+                <img src="./gallery4.png" alt="">
+                <img src="./gallery3.png" alt="">
+                <img src="./gallery2.png" alt="">
+                <img src="./gallery1.png" alt="">
+            </div>
+    </section>
+
+      <section class="soket-section">
+        <div class="container">
+            <p>Web Design by Sazid Hasan</p>
+            <p id="datetime"></p>
+
+        </div>
+      </section>
+
+
+
+<script>
+    // JavaScript code to display current date and time
+    function updateDateTime() {
+        var currentDate = new Date();
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+        var formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+        document.getElementById('datetime').innerHTML = formattedDate;
+    }
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+
+    // Initial call to display the date and time immediately
+    updateDateTime();
+</script>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+</head>
+<body>
+    <section class="header-section">
+        <div class="container">
+            <div class="main_column">
+                <div class="logo_column">
+                    <a href="./index.html"><img src="./logo.png" alt="logo"></a>
+                </div>
+                <div class="menu_column">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-secction">
+        <img src="./faq-banner.png" alt="">
+    </section>
+     
+
+    <section class="faq-section">
+        <div class="container">
+            <h1>Faq</h1>
+            <div class="faq-container">
+                <div class="faq">
+                    <div class="question" onclick="toggleAnswer(1)">Q: How do I create an account?</div>
+                    <div class="answer" id="answer1">A: To create an account, click on the 'Sign Up' link on the top-right corner of the page and follow the instructions to provide your details.</div>
+                </div>
+        
+                <div class="faq">
+                    <div class="question" onclick="toggleAnswer(2)">Q: How can I update my profile information?</div>
+                    <div class="answer" id="answer2">A: Log in to your account, go to the 'Profile' section, and you can update your information such as name, email, and password.</div>
+                </div>
+        
+                <div class="faq">
+                    <div class="question" onclick="toggleAnswer(3)">Q: What is your return policy?</div>
+                    <div class="answer" id="answer3">A: Our return policy allows you to return items within 30 days of purchase. Please refer to our 'Returns' page for more detailed information.</div>
+                </div>
+        
+                <div class="faq">
+                    <div class="question" onclick="toggleAnswer(4)">Q: Can I track my order?</div>
+                    <div class="answer" id="answer4">A: Yes, you can track your order by logging into your account and visiting the 'Order History' section for tracking details.</div>
+                </div>
+        
+                <div class="faq">
+                    <div class="question" onclick="toggleAnswer(5)">Q: How can I contact customer support?</div>
+                    <div class="answer" id="answer5">A: You can contact our customer support team by emailing support@example.com or calling our toll-free number at 1-800-123-4567.</div>
+                </div>
+        
+            </div>
+        
+        </div>
+    </section>
+  
+
+      <section class="soket-section">
+        <div class="container">
+            <p>Web Design by Sazid Hasan</p>
+            <p id="datetime"></p>
+
+        </div>
+      </section>
+
+
+<script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(`answer${id}`);
+            answer.classList.toggle("active");
+        }
+    </script>
+<script>
+    // JavaScript code to display current date and time
+    function updateDateTime() {
+        var currentDate = new Date();
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+        var formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+        document.getElementById('datetime').innerHTML = formattedDate;
+    }
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+
+    // Initial call to display the date and time immediately
+    updateDateTime();
+</script>
+
+
+   
+</body>
+</html>
